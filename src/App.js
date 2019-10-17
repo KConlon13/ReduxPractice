@@ -1,17 +1,19 @@
 import React from 'react';
 import './App.css';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
+import { increment, decrement } from './actions'
 
 function App() {
   const counter = useSelector(state => state.counter);
   const isLogged = useSelector(state => state.isLogged);
+  const dispatch = useDispatch();
   return (
     <div className="App">
       <h1>Kyle's Redux Counter App</h1>
       <h1>{counter}</h1>
-      
-      <button class="button">+</button>
-      <button class="button">-</button>
+
+      <button class="button" onClick={()=> dispatch(increment())}>+</button>
+      <button class="button" onClick={()=> dispatch(decrement())}>-</button>
 
       <div>
         {isLogged ? <h3>Hidden Spooky Information 👻</h3> : null}
