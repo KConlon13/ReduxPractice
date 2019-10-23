@@ -14,7 +14,25 @@ code {
 
 .button {
   height: 30px;
-  width: 50px;
+  width: 70px;
+  font-size: 18px;
+  background-color: white;
+  color: black;
+  box-shadow: 1px 1px rgba(0, 0, 0, 0.568);
+}
+
+#zeroButton {
+  height: 30px;
+  width: 70px;
+  font-size: 18px;
+  background-color: white;
+  color: black;
+  box-shadow: 1px 1px rgba(0, 0, 0, 0.568);
+}
+
+.disabledButton {
+  height: 30px;
+  width: 70px;
   font-size: 18px;
   background-color: grey;
   color: white;

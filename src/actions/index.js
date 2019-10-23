@@ -15,3 +15,9 @@ export const multiplyByTen = () => {
         type: 'MULTIPLY_BY_TEN'
     }
 }
+
+export const revertToZero = () => {
+    return {
+        type: 'REVERT_TO_ZERO'
+    }
+}

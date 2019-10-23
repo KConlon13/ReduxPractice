@@ -6,6 +6,8 @@ const counterReducer = (state = 0, action) => {
             return state - 1;
         case 'MULTIPLY_BY_TEN':
             return state * 10;
+        case 'REVERT_TO_ZERO':
+            return state * 0;
         default:
         return state;
     }
