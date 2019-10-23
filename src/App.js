@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import { useSelector, useDispatch } from 'react-redux';
-import { increment, decrement, multiplyByTen, revertToZero } from './actions'
+import { increment, decrement, multiplyByTen, revertToZero, logIn } from './actions'
 
 function App() {
   const counter = useSelector(state => state.counter);
@@ -164,11 +164,13 @@ function App() {
       <button id="zeroButton" onClick={()=> dispatch(revertToZero())}>revert</button>}
 
       <br></br>
-      
-      <button onClick={()=>harlemShake()}>a surprise</button>
 
+      {isLogged ? <button class="bigButton" onClick={()=> dispatch(logIn())}>Make It Go Away!</button> :
+    <button class="bigButton" onClick={()=> dispatch(logIn())}>Hidden Spooky Information 👻</button>}
+    <br></br>
+    <button class="bigButton" onClick={()=>harlemShake()}>A Surprise!</button>
       <div>
-        {isLogged ? <h3>Hidden Spooky Information 👻</h3> : null}
+        {isLogged ? <h1>You're Fat and Ugly</h1> : null}
       </div>
     </div>
   );
