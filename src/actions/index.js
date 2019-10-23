@@ -9,3 +9,9 @@ export const decrement = () => {
         type: 'DECREMENT'
     }
 }
+
+export const multiplyByTen = () => {
+    return {
+        type: 'MULTIPLY_BY_TEN'
+    }
+}
