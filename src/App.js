@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import { useSelector, useDispatch } from 'react-redux';
 import { increment, decrement, multiplyByTen, revertToZero, logIn } from './actions'
+import Container from "./Container"
 
 function App() {
   const counter = useSelector(state => state.counter);
@@ -172,6 +173,8 @@ function App() {
       <div>
         {isLogged ? <h1>You're Fat and Ugly</h1> : null}
       </div>
+
+    <Container />
     </div>
   );
 }
