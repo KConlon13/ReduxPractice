@@ -27,3 +27,9 @@ export const logIn = () => {
         type: 'SIGN_IN'
     }
 }
+
+export const restaurants = () => {
+    return {
+        type: 'RESTAURANT'
+    }
+}

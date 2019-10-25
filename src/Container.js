@@ -1,9 +1,12 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { increment, decrement, multiplyByTen, revertToZero, logIn } from './actions'
+import { restaurants } from './actions'
 
 function Container () {
     const counter = useSelector(state => state.counter);
+    const restaurantsArray = useSelector(state => state.restaurants)
+
+    // fetch()
 
     return (
         <div>
