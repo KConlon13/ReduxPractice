@@ -29,7 +29,7 @@ function App() {
       <br></br>
 
       {isLogged ? <button class="bigButton" onClick={()=> dispatch(logIn())}>Make It Go Away!</button> :
-    <button class="bigButton" onClick={()=> dispatch(logIn())}>Hidden Spooky Information 👻</button>}
+    <button class="bigButton" onClick={()=> dispatch(logIn())}>Hidden Spooky Information</button>}
     <br></br>
       <div>
         {isLogged ? <h1>Art is  a Lie, NOTHING IS REAL</h1> : null}
