@@ -1,4 +1,5 @@
 import React from 'react';
+import Card from './Card'
 // import { useSelector } from 'react-redux';
 
 // const counter = useSelector(state => state.counter);
@@ -17,16 +18,17 @@ class Container extends React.Component {
         ) 
     }
 
-    // restys = restNames.map(rest=> <h1>{rest.name}</h1>)
     render(){
-        console.log(this.state.restArray)
+        let cardComponents = this.state.restArray.map(rest => <Card key={rest.id} obj={rest} restArray={this.state.restArray} />)
+
         return (
             <div>
-            <h1>Hello this is the Container</h1>
-            <h3>And this is the Current Counter</h3>
-            {/* {counter} */}
+ 
             {/* {restNames === [] ? null : <div>{restNames}</div>} */}
             {/* {restys} */}
+            <br/>
+            <h3>Restaurant Names</h3>
+            {cardComponents}
         </div>
     )
     }
