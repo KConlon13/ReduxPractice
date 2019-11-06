@@ -47,3 +47,15 @@ code {
   color: black;
   box-shadow: 1px 1px rgba(0, 0, 0, 0.568);
 }
+
+.restContainer {
+  display: inline-grid;
+  margin: 10px;
+  filter: opacity(1);
+  border-radius: 20px;
+}
+
+/* .ui.card {
+  border: 5px solid grey;
+  border-radius: 2px
+} */

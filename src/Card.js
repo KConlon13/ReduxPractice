@@ -9,11 +9,17 @@ class Card extends React.Component {
 
     render(){
         return (
-            <div>
-                {this.props.obj.name}
+        <div class="restContainer">
+            <div class="ui card">
+                    <div class="content">
+                        <a class="header">{this.props.obj.name}</a>
+                    </div>
+                    <div class="description">
+                        {this.props.obj.location}
+                    </div>
             </div>
-        )
-    }
+        </div>
+    )}
 }
 
 export default Card;
