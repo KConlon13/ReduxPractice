@@ -59,3 +59,20 @@ code {
   border: 5px solid grey;
   border-radius: 2px
 } */
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 10vh;
+    background-color: rgb(9, 117, 81);
+    color: white;
+}
+
+.nav-links {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
