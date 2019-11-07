@@ -11,7 +11,7 @@ function Home() {
   
   return (
     <div className="App">
-      <h1>Kyle's Redux & Router & Counter App Project?</h1>
+      <h1>Counter Page</h1>
       <h1>{counter}</h1>
 
       <button class="button" onClick={()=> dispatch(decrement())}>-</button>
