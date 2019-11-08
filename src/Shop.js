@@ -21,7 +21,7 @@ function Shop(){
     return (
         <div>
             <h1>Shop Page</h1>
-            
+
             {items.map(item => 
                 <h3 key={item.restaurant_id} obj={item}>
                     <Link to={`/shop/${item.restaurant_id}`}>{item.name}</Link>
