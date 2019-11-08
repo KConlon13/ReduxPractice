@@ -3,7 +3,7 @@ import './App.css';
 import ItemDetail from "./ItemDetail"
 import { Link } from 'react-router-dom';
 
-function Shop(){
+function Restaurants(){
 
     useEffect(()=> {
         fetchItems();
@@ -20,7 +20,7 @@ function Shop(){
 
     return (
         <div className="shop-page">
-            <h1>Shop Page</h1>
+            <h1>Restaurants</h1>
 
             {items.map(item => 
                 <h3 key={item.restaurant_id} obj={item}>
@@ -31,4 +31,4 @@ function Shop(){
     )
 };
 
-export default Shop;
+export default Restaurants;
