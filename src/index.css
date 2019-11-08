@@ -53,6 +53,7 @@ code {
   margin: 10px;
   filter: opacity(1);
   border-radius: 20px;
+  padding: 10px;
 }
 
 /* .ui.card {
