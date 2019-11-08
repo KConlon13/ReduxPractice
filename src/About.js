@@ -3,8 +3,9 @@ import './App.css';
 
 function About(){
     return (
-        <div>
-            <h1>About Page Here!</h1>
+        <div className="about-page">
+            <h1>About Page</h1>
+            <h4>This Website was built by Kyle Conlon</h4>
         </div>
     )
 }

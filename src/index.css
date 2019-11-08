@@ -56,11 +56,6 @@ code {
   padding: 10px;
 }
 
-/* .ui.card {
-  border: 5px solid grey;
-  border-radius: 2px
-} */
-
 .nav {
     display: flex;
     justify-content: space-around;
@@ -76,4 +71,12 @@ code {
   justify-content: space-around;
   align-items: center;
   list-style: none;
+}
+
+.shop-page {
+  text-align: center;
+}
+
+.about-page {
+  text-align: center;
 }

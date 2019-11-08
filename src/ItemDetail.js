@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import { Link } from 'react-router-dom';
 
-function ItemDetail( match ) {
+function ItemDetail( match, params ) {
 
     useEffect(()=> {
         fetchItem();
@@ -14,7 +14,7 @@ function ItemDetail( match ) {
         const fetchItem = await fetch(`https://chewsy-backend-api.herokuapp.com/restaurants`)
         const item = await fetchItem.json();
         setItem(item);
-        console.log(item)
+        console.log(params)
     }
 
     return (

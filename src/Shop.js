@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
-import Card from "./Card"
+import ItemDetail from "./ItemDetail"
 import { Link } from 'react-router-dom';
 
 function Shop(){
@@ -14,12 +14,12 @@ function Shop(){
     const fetchItems = async () => {
         const data = await fetch('https://chewsy-backend-api.herokuapp.com/restaurants');
         const items = await data.json()
-        console.log(items)
+
         setItems(items)
     };
 
     return (
-        <div>
+        <div className="shop-page">
             <h1>Shop Page</h1>
 
             {items.map(item => 
