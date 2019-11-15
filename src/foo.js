@@ -1,4 +1,4 @@
-
+// JS PRACTICE QUESTIONS
 
 // 1. Write a program that prints the numbers from 1 to 21. But for multiples of three,
 // print "Fizz" instead of the number, and for the multiples of five, print "Buzz". For 
@@ -53,4 +53,15 @@
 // }
 
 // longestWordFinder(otherSentence)
+
+// 5. Alphabet Soup! You'll be sorting words in a string alphabetically
+
+// let sentence = "You know nothing Jon Snow"
+
+// function alphabetizer(sentence){
+//     let sortedSentence = sentence.toLowerCase().split(" ").sort()
+//     console.log(sortedSentence)
+// }
+
+// alphabetizer(sentence)
 
