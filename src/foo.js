@@ -41,3 +41,16 @@
 // }
 
 // palindromeChecker(someWord)
+
+// 4. For this challenge, you will be determining the largest word in a string
+
+// let sentence = "The quick brown fox jumped over the lazy dog"
+// let otherSentence = "Harry Potter and the Prisoner of Azkaban"
+
+// function longestWordFinder(sentence){
+//     let sentenceArray = sentence.split(" ").sort(function(a,b) {return b.length - a.length})
+//     console.log("The longest word is: ", sentenceArray[0])    
+// }
+
+// longestWordFinder(otherSentence)
+
