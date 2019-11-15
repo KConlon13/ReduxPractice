@@ -11,7 +11,7 @@ function Nav(){
 
     return (
         <nav className="nav">
-            <h3>Chewsy 2.0</h3>
+            <h3>Practice Project</h3>
             <ul className="nav-links">
                 <Link style={navStyle} to="/">
                     <li>Home</li>
@@ -22,6 +22,7 @@ function Nav(){
                 <Link style={navStyle} to="/restaurants">
                     <li>Restaurants</li>
                 </Link>
+
             </ul>
         </nav>
     )

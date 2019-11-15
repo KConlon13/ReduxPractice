@@ -23,11 +23,10 @@ class Container extends React.Component {
 
         return (
             <div>
- 
-            <br/>
-            <h3>Restaurant Names</h3>
-            {cardComponents}
-        </div>
+                <br/>
+                <h3>Restaurant Names</h3>
+                {cardComponents}
+            </div>
     )
     }
 }
