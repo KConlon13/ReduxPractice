@@ -65,3 +65,24 @@
 
 // alphabetizer(sentence)
 
+// 6. Time Convertor
+
+function timeConvert(num) { 
+    if (num < 60) {
+      num = "0:"+ num
+    } else if (num === 60) {
+      num = 1+":"+00
+    } else if (num > 60) {
+      // hour
+        let hour = num / 60 
+        let finalHour = Math.floor(hour)
+      // minutes
+        let subtractor = finalHour * 60;
+        let mins = num - subtractor
+  
+        num = finalHour+":"+mins;
+    }
+    console.log(num); 
+  }
+
+timeConvert(126)
